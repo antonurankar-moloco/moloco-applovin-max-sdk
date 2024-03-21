@@ -34,7 +34,7 @@ class InterstitialAdActivity : BaseAdActivity(),
 
         setupCallbacksRecyclerView()
 
-        interstitialAd = MaxInterstitialAd("YOUR_AD_UNIT_ID", this)
+        interstitialAd = MaxInterstitialAd("48ff6f001106f7ec", this)
 
         interstitialAd.setListener(this)
         interstitialAd.setRevenueListener(this)

@@ -33,7 +33,7 @@ class ProgrammaticBannerAdActivity : BaseAdActivity(),
 
         setupCallbacksRecyclerView()
 
-        adView = MaxAdView("YOUR_AD_UNIT_ID", this)
+        adView = MaxAdView("8824b3124075441b", this)
 
         adView.setListener(this)
         adView.setRevenueListener(this)

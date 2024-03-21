@@ -36,7 +36,7 @@ class JetpackComposeBannerAdActivity : BaseJetpackComposeAdActivity() {
                     .fillMaxSize()
             )
             {
-                MaxAdViewComposable("YOUR_AD_UNIT_ID", adFormat, bannerViewModel)
+                MaxAdViewComposable("8824b3124075441b", adFormat, bannerViewModel)
                 ListCallbacks()
             }
         }

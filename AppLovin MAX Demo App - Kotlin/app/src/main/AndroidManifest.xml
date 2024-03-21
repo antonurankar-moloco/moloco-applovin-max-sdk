@@ -14,7 +14,7 @@
 
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="05TMDQ5tZabpXQ45_UTbmEGNUtVAzSTzT6KmWQc5_CuWdzccS4DCITZoL3yIWUG3bbq60QC_d4WF28tUC4gVTF" />
+            android:value="1HcUEifZL7U71CcZbrMx30uXhNII3qS3n06NDLsdPbG0DcrKFHg4pXKkTTrS7xot8bedcXDmCfh1GlLqFXQ5IJ" />
 
         <activity
             android:exported="true"

@@ -7,9 +7,12 @@ import com.adjust.sdk.Adjust
 import com.adjust.sdk.AdjustAdRevenue
 import com.adjust.sdk.AdjustConfig
 import com.applovin.enterprise.apps.demoapp.R
-
 import com.applovin.enterprise.apps.demoapp.ui.BaseAdActivity
-import com.applovin.mediation.*
+import com.applovin.mediation.MaxAd
+import com.applovin.mediation.MaxAdRevenueListener
+import com.applovin.mediation.MaxError
+import com.applovin.mediation.MaxReward
+import com.applovin.mediation.MaxRewardedAdListener
 import com.applovin.mediation.ads.MaxRewardedAd
 import java.util.concurrent.TimeUnit
 import kotlin.math.min
@@ -32,7 +35,7 @@ class RewardedAdActivity : BaseAdActivity(),
 
         setupCallbacksRecyclerView()
 
-        rewardedAd = MaxRewardedAd.getInstance("YOUR_AD_UNIT_ID", this)
+        rewardedAd = MaxRewardedAd.getInstance("a6dd083593e2221c", this)
 
         rewardedAd.setListener(this)
         rewardedAd.setRevenueListener(this)

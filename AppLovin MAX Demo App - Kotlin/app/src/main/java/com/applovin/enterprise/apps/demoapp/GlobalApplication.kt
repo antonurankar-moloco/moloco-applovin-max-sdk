@@ -9,14 +9,18 @@ import com.applovin.sdk.AppLovinMediationProvider
 import com.applovin.sdk.AppLovinSdk
 import com.applovin.sdk.AppLovinSdkSettings
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
+import com.moloco.sdk.internal.MolocoLogger
 import java.util.Collections
 import java.util.concurrent.Executors
 
+
+private const val ENABLE_TEST_MODE=false
 
 class GlobalApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        MolocoLogger.logEnabled=true
 
         // If you want to test your own AppLovin SDK key,
         // update the value in AndroidManifest.xml under the "applovin.sdk.key" key, and update the package name to your app's name.
@@ -27,7 +31,7 @@ class GlobalApplication : Application() {
             val currentGaid = AdvertisingIdClient.getAdvertisingIdInfo(this).id
 
             val settings = AppLovinSdkSettings(this)
-            if (currentGaid != null) {
+            if (ENABLE_TEST_MODE && currentGaid != null) {
                 settings.testDeviceAdvertisingIds = Collections.singletonList(currentGaid)
             }
 
